@@ -25,12 +25,40 @@
 				margin-bottom: 2em !important;
 			}
 
-			#titleBar, #navPanel {
+			#titleBar, 
+			#navPanel, 
+			.titleBar, 
+			.navPanel,
+			#header,
+			header#header {
 				display: none !important;
+				opacity: 0 !important;
+				visibility: hidden !important;
+				height: 0 !important;
+				min-height: 0 !important;
+				padding: 0 !important;
+				margin: 0 !important;
 			}
-			
-			body {
+
+			body, 
+			#page-wrapper {
 				padding-top: 0 !important;
+				margin-top: 0 !important;
+			}
+
+			#footer a, 
+			#footer p a, 
+			#footer strong a {
+				background: none !important;
+				background-color: transparent !important;
+				border: none !important;
+				border-bottom: none !important; 
+				box-shadow: none !important;
+				padding: 0 !important;
+				margin: 0 !important;
+				display: inline !important;
+				color: #ffffff !important;
+				text-decoration: none !important; 
 			}
 
 			@media screen and (max-width: 980px) {
@@ -47,19 +75,20 @@
 
 				#footer h2 { font-size: 24px !important; margin-bottom: 20px !important; }
 
-				#footer p, #footer p strong, #footer p a {
+				#footer p, 
+				#footer p strong {
 					font-size: 18px !important; 
-					line-height: 2.2 !important; 
-				}
-
-				#footer p a {
-					background-color: transparent !important;
-					border: none !important;
-					padding: 0 !important;
-					text-decoration: underline !important;
+					line-height: 2 !important; 
 				}
 
 				#footer .copyright li { font-size: 14px !important; }
+
+				.wrapper.style1.container.special > div {
+					gap: 15px !important; 
+				}
+				.image.fit {
+					margin: 0 !important; 
+				}
 			}
 	</style>
 </head>
