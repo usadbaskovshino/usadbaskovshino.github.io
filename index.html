@@ -4,6 +4,8 @@
 <head>
 	<title>Агроусадьба Швайковской | Снять дом на пруду Сковшинское</title>
 	<meta charset="utf-8" />
+	<!-- Добавлен обязательный тег для мобильных устройств -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description"
 		content="Агроусадьба на берегу пруда «Сковшинское» (Минская область). Аренда гостевых домов, баня с печью на камнях, рыбалка." />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -26,24 +28,35 @@
 
 			@media screen and (max-width: 980px) {
 				
-				#banner h1 { font-size: 36px !important; }
-				#banner p { font-size: 20px !important; }
+				#banner h1 { font-size: 32px !important; }
+				#banner p { font-size: 18px !important; }
 
-				header.major h2 { font-size: 30px !important; margin-bottom: 15px !important; }
+				header.major h2 { font-size: 26px !important; margin-bottom: 15px !important; }
 				
 				header.major p { 
-					font-size: 20px !important; 
+					font-size: 18px !important; 
 					line-height: 1.5 !important;
 				}
 
-				#footer h2 { font-size: 28px !important; margin-bottom: 20px !important; }
+				#footer h2 { font-size: 24px !important; margin-bottom: 20px !important; }
 
+				/* Увеличили межстрочный интервал, чтобы текст не слипался */
 				#footer p, #footer p strong, #footer p a {
-					font-size: 22px !important; 
-					line-height: 1.8 !important; 
+					font-size: 18px !important; 
+					line-height: 2.2 !important; 
 				}
 
-				#footer .copyright li { font-size: 16px !important; }
+				/* Сделали ссылки крупнее, добавив внутренние отступы, чтобы по ним было легко попасть */
+				#footer p a {
+					display: inline-block;
+					padding: 6px 12px;
+					background-color: rgba(255, 255, 255, 0.1);
+					border-radius: 4px;
+					margin: 2px 0;
+					text-decoration: none;
+				}
+
+				#footer .copyright li { font-size: 14px !important; }
 			}
 	</style>
 </head>
@@ -116,10 +129,11 @@
 			<h2 style="color: white; margin-bottom: 20px;">Ждем вас в гости!</h2>
 
 			<p style="font-size: 1.2em; color: #ccc;">
-				<strong>Телефон:</strong> <a href="tel:+375291234567" style="color: white;">+375 (29) 577-98-34</a><br>
+				<!-- Исправлен номер телефона в ссылке href -->
+				<strong>Телефон:</strong> <a href="tel:+375295779834" style="color: white;">+375 (29) 577-98-34</a><br>
 				<strong>Адрес:</strong> Минская обл., Солигорский р-н,<br>
 				вблизи аг. Сковшин (пруд «Сковшинское»)<br>
-				<strong>GPS-координаты:</strong> <span style="font-size: 0.9em;">52.54322635, 27.79543265</span><br>
+				<strong>GPS-координаты:</strong> <span style="font-size: 0.9em; display: inline-block; padding: 4px 0;">52.54322635, 27.79543265</span><br>
 				<strong>Instagram:</strong> <a
 					href="https://www.instagram.com/usadzba.shvaykovskoy?igsh=ejcybnc5d2xzaDJo" target="_blank"
 					style="color: white;">@usadzba.shvaykovskoy</a>
