@@ -52,13 +52,13 @@
 				background: none !important;
 				background-color: transparent !important;
 				border: none !important;
-				border-bottom: none !important; 
+				border-bottom: none !important;
 				box-shadow: none !important;
 				padding: 0 !important;
 				margin: 0 !important;
 				display: inline !important;
 				color: #ffffff !important;
-				text-decoration: none !important; 
+				text-decoration: none !important;
 			}
 
 			@media screen and (max-width: 980px) {
@@ -84,10 +84,41 @@
 				#footer .copyright li { font-size: 14px !important; }
 
 				.wrapper.style1.container.special > div {
-					gap: 15px !important; 
+					flex-direction: row !important;      
+					overflow-x: auto !important;         
+					overflow-y: hidden !important;       
+					width: 100vw !important;             
+					margin-left: calc(-50vw + 50%) !important; 
+					padding-left: 20px !important;       
+					padding-right: 20px !important;      
+					gap: 15px !important;               
+					scroll-snap-type: x mandatory !important; 
+					scroll-padding: 0 20px !important;  
+					-webkit-overflow-scrolling: touch !important; 
+					justify-content: flex-start !important;
 				}
-				.image.fit {
-					margin: 0 !important; 
+
+				.wrapper.style1.container.special > div::-webkit-scrollbar {
+					display: none !important;
+				}
+				.wrapper.style1.container.special > div {
+					-ms-overflow-style: none !important; 
+					scrollbar-width: none !important;    
+				}
+
+				
+				.wrapper.style1.container.special .image.fit {
+					width: 80% !important;               
+					max-width: 300px !important;         
+					flex-shrink: 0 !important;           
+					scroll-snap-align: start !important; 
+					margin: 0 !important;
+				}
+
+				.wrapper.style1.container.special .image.fit img {
+					border-radius: 8px !important;
+					width: 100% !important;
+					height: auto !important;
 				}
 			}
 	</style>
@@ -164,7 +195,7 @@
 				<strong>Телефон:</strong> <a href="tel:+375295779834" style="color: white;">+375 (29) 577-98-34</a><br>
 				<strong>Адрес:</strong> Минская обл., Солигорский р-н,<br>
 				вблизи аг. Сковшин (пруд «Сковшинское»)<br>
-				<strong>GPS-координаты:</strong> <a href="https://yandex.ru/maps/?text=52.54322635,27.79543265" target="_blank" style="color: white; font-size: 0.9em;">52.54322635, 27.79543265</a><br>
+				<strong>GPS-координаты:</strong> <a href="https://yandex.ru/maps/?text=52.54322635, 27.79543265" target="_blank" style="color: white; font-size: 0.9em;">52.54322635, 27.79543265</a><br>
 				<strong>Instagram:</strong> <a
 					href="https://www.instagram.com/usadzba.shvaykovskoy?igsh=ejcybnc5d2xzaDJo" target="_blank"
 					style="color: white;">@usadzba.shvaykovskoy</a>
